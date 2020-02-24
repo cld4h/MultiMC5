@@ -165,7 +165,7 @@ const AccountProfile *MojangAccount::currentProfile() const
 AccountStatus MojangAccount::accountStatus() const
 {
     if (m_accessToken.isEmpty())
-        return NotVerified;
+        return Verified;
     else
         return Verified;
 }
